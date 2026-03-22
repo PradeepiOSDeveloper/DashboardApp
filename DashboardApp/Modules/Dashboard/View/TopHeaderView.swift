@@ -36,7 +36,7 @@ final class TopHeaderView: UIView {
         notificationButton.setImage(UIImage(named: "notification_icon"), for: .normal)
 
         [settingsButton, notificationButton].forEach {
-            $0.tintColor = .clear   // IMPORTANT: disable tint for asset images
+            $0.tintColor = .clear
             $0.backgroundColor = UIColor.white.withAlphaComponent(0.0)
             $0.layer.cornerRadius = 10
             $0.clipsToBounds = true

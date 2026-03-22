@@ -21,9 +21,10 @@ final class PersonalInfoRowCell: UITableViewCell {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         
-        // Inner mini card
         cardView.backgroundColor = UIColor.systemGray6
-        cardView.layer.cornerRadius = 14
+        cardView.layer.cornerRadius = 10
+        cardView.layer.borderWidth = 1
+        cardView.layer.borderColor = UIColor.lightGray.cgColor
         
         statusLabel.layer.cornerRadius = 10
         statusLabel.clipsToBounds = true

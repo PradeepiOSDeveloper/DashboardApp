@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chF-OD-pmv">
-                        <rect key="frame" x="6" y="6" width="549" height="140"/>
+                        <rect key="frame" x="8" y="6" width="545" height="140"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="V50-vo-vND">
                                 <rect key="frame" x="10" y="10" width="55" height="55"/>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVz-b1-Wb3">
-                                <rect key="frame" x="418" y="25" width="106" height="42"/>
+                                <rect key="frame" x="414" y="25" width="106" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="106" id="DHk-bh-Qv1"/>
                                     <constraint firstAttribute="height" constant="42" id="kJi-dU-h27"/>
@@ -93,8 +93,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="chF-OD-pmv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Axl-NR-CiS"/>
-                    <constraint firstItem="chF-OD-pmv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="Hy2-90-qfH"/>
-                    <constraint firstAttribute="trailing" secondItem="chF-OD-pmv" secondAttribute="trailing" constant="6" id="UkE-hL-fwA"/>
+                    <constraint firstItem="chF-OD-pmv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Hy2-90-qfH"/>
+                    <constraint firstAttribute="trailing" secondItem="chF-OD-pmv" secondAttribute="trailing" constant="8" id="UkE-hL-fwA"/>
                     <constraint firstAttribute="bottom" secondItem="chF-OD-pmv" secondAttribute="bottom" constant="6" id="xCd-Av-Jb2"/>
                 </constraints>
             </tableViewCellContentView>

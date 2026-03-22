@@ -24,4 +24,5 @@ final class DashboardViewModel {
     var user: User? { model?.user }
     var actions: [ActionItem] { model?.actions ?? [] }
     var infos: [InfoItem] { model?.infos ?? [] }
+    var carouselItems: [CarouselItem] { model?.carousel ?? [] }
 }

@@ -10,6 +10,7 @@ struct DashboardModel {
     let user: User
     let actions: [ActionItem]
     let infos: [InfoItem]
+    let carousel: [CarouselItem]
 }
 
 struct User {
@@ -27,5 +28,11 @@ struct InfoItem {
     let title: String
     let date: String
     let status: String
+    let icon: String
+}
+
+struct CarouselItem {
+    let title: String
+    let description: String
     let icon: String
 }

@@ -63,8 +63,8 @@ final class DashboardViewController: UIViewController {
         let gradient = CAGradientLayer()
         
         gradient.colors = [
-            UIColor.white.cgColor,  // beige
-            UIColor(red: 0.85, green: 0.95, blue: 0.85, alpha: 1).cgColor   // green
+            UIColor.white.cgColor,
+            UIColor(red: 0.85, green: 0.95, blue: 0.85, alpha: 1).cgColor
         ]
         
         gradient.startPoint = CGPoint(x: 0, y: 0)
@@ -118,7 +118,7 @@ extension DashboardViewController: UITableViewDelegate,UITableViewDataSource {
             
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "CarouselCell", for: indexPath) as! CarouselCell
-            cell.configure()
+            cell.configure(items: viewModel.carouselItems)
             return cell
 
         default:
@@ -131,7 +131,7 @@ extension DashboardViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return (section == 0 || section == 1) ? .leastNormalMagnitude : 12
+        return (section == 0 || section == 1 || section == 3) ? .leastNormalMagnitude : 12
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -151,7 +151,7 @@ extension DashboardViewController: UITableViewDelegate,UITableViewDataSource {
             return 540    // PersonalInfo
         
         case 4:
-            return 300    // Info
+            return 200    // Carousel
             
         default:
             return UITableView.automaticDimension
